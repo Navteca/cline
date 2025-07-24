@@ -1,0 +1,9 @@
+{
+    "schemaVersion": 1,
+    "base": {
+        "name": "cline_jupyterlab"
+    },
+    "managers": [
+        "pip"
+    ]
+}

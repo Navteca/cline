@@ -1,0 +1,68 @@
+{
+  "title": "Cline JupyterLab Settings",
+  "description": "Settings for the Cline AI Assistant JupyterLab extension",
+  "type": "object",
+  "properties": {
+    "apiProvider": {
+      "title": "API Provider",
+      "description": "The AI service provider to use",
+      "type": "string",
+      "enum": ["openai", "anthropic", "openrouter", "local"],
+      "default": "openai"
+    },
+    "apiKey": {
+      "title": "API Key",
+      "description": "API key for the selected provider",
+      "type": "string",
+      "default": ""
+    },
+    "apiUrl": {
+      "title": "API URL",
+      "description": "Custom API URL (for local or custom endpoints)",
+      "type": "string",
+      "default": ""
+    },
+    "model": {
+      "title": "Model",
+      "description": "The AI model to use",
+      "type": "string",
+      "default": "gpt-4"
+    },
+    "maxTokens": {
+      "title": "Max Tokens",
+      "description": "Maximum number of tokens in responses",
+      "type": "number",
+      "minimum": 100,
+      "maximum": 8000,
+      "default": 2000
+    },
+    "temperature": {
+      "title": "Temperature",
+      "description": "Creativity/randomness of responses (0.0 to 1.0)",
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.7
+    },
+    "autoSave": {
+      "title": "Auto Save",
+      "description": "Automatically save conversation history",
+      "type": "boolean",
+      "default": true
+    },
+    "showLineNumbers": {
+      "title": "Show Line Numbers",
+      "description": "Show line numbers in code blocks",
+      "type": "boolean",
+      "default": true
+    },
+    "theme": {
+      "title": "Theme",
+      "description": "UI theme for the Cline interface",
+      "type": "string",
+      "enum": ["auto", "light", "dark"],
+      "default": "auto"
+    }
+  },
+  "additionalProperties": false
+}
